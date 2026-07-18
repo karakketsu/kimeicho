@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: ジャンル一覧 — 記銘帖
+nav: genres
+permalink: /genres/
+---
+<div class="section-label">GENRES</div>
+<p class="section-index">ジャンル(原作)ごとの一覧</p>
+
+<ul class="index-list">
+  {% for fandom, items in collections.byFandom %}
+  <li>
+    <a href="/genres/{{ fandom | slugify }}/">{{ fandom }}</a>
+    <span class="count">{{ items.length }}作品</span>
+  </li>
+  {% endfor %}
+</ul>

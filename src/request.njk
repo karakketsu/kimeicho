@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: 閲覧のお申し込み — 記銘帖
+nav: none
+permalink: /request/
+---
+<article class="entry">
+  <h1 class="entry-title">閲覧のお申し込み</h1>
+
+  <div class="entry-body">
+    <p>
+      当サイトでは、通常の公開作品のほかに、VTuberの二次創作も書いています。<br>
+      性質上、こちらは一覧に出さず、個別に閲覧をご案内する形にしています。
+    </p>
+    <p>
+      ご希望の方は、下のフォームにメールアドレスをご入力のうえ送信してください。<br>
+      確認でき次第、閲覧用のご案内をお送りします。
+    </p>
+  </div>
+
+<form class="request-form" action="https://formspree.io/f/mnjednzj" method="POST">
+    <div class="form-row">
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+    </div>
+    <div class="form-row">
+      <label for="message">一言(任意・どこで知ったかなど)</label>
+      <textarea id="message" name="message" rows="4" placeholder="任意でどうぞ"></textarea>
+    </div>
+    <!-- スパム対策用ハニーポット（人には見えない・触れないフィールド） -->
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <button type="submit">送信する</button>
+  </form>
+
+  <p class="section-index" style="margin-top:32px;">
+    送信内容はこちらにのみ届き、サイト上には表示されません。
+  </p>
+</article>

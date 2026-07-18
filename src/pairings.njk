@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: カップリング一覧 — 記銘帖
+nav: pairings
+permalink: /pairings/
+---
+<div class="section-label">PAIRINGS</div>
+<p class="section-index">カップリングごとの一覧</p>
+
+<ul class="index-list">
+  {% for pairing, items in collections.byPairing %}
+  <li>
+    <a href="/pairings/{{ pairing | slugify }}/">{{ pairing }}</a>
+    <span class="count">{{ items.length }}作品</span>
+  </li>
+  {% endfor %}
+</ul>

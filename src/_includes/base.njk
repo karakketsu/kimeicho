@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title or "記銘帖" }}</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="frame">
+      <p class="issue-no">ARCHIVE — SINCE {{ siteStartYear or "2019" }}</p>
+      <p class="site-name"><a href="/">記 銘 帖</a></p>
+      <p class="site-tagline">NOVEL ARCHIVE</p>
+      <nav class="site">
+        <a href="/novels/" class="{{ 'current' if nav == 'novels' }}">小説</a>
+        <a href="/genres/" class="{{ 'current' if nav == 'genres' }}">ジャンル</a>
+        <a href="/pairings/" class="{{ 'current' if nav == 'pairings' }}">カップリング</a>
+        <a href="/blog/" class="{{ 'current' if nav == 'blog' }}">ブログ</a>
+        <a href="/about/" class="{{ 'current' if nav == 'about' }}">このサイトについて</a>
+      </nav>
+    </div>
+  </header>
+
+  {{ content | safe }}
+
+  <footer class="site">
+    &copy; {{ siteStartYear or "2019" }}– 記銘帖
+  </footer>
+
+</div>
+</body>
+</html>

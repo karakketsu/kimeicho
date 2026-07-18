@@ -1,0 +1,32 @@
+---
+layout: base.njk
+nav: pairings
+pagination:
+  data: collections.byPairing
+  size: 1
+  alias: pairingKey
+permalink: "/pairings/{{ pairingKey | slugify }}/"
+eleventyComputed:
+  title: "{{ pairingKey }} — 記銘帖"
+---
+{% set items = collections.byPairing[pairingKey] %}
+<div class="section-label">PAIRING — {{ pairingKey }}</div>
+<p class="section-index">全{{ items.length }}作品</p>
+
+<table class="works">
+  {% for item in items %}
+  <tr>
+    <td class="date">{{ item.data.date | ym }}</td>
+    <td class="title">
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+      <span class="tags">
+        {% if item.data.rating %}<span class="tag rating">{{ item.data.rating }}</span>{% endif %}
+        {% if item.data.fandom %}<span class="tag">{{ item.data.fandom }}</span>{% endif %}
+      </span>
+    </td>
+    <td class="note">{{ item.data.type }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<a class="back-link" href="/pairings/">← カップリング一覧へ戻る</a>

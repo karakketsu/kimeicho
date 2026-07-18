@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: 小説一覧 — 記銘帖
+nav: novels
+permalink: /novels/
+---
+<div class="section-label">CONTENTS — 小説</div>
+<p class="section-index">全{{ collections.novels.length }}作品</p>
+
+<table class="works">
+  {% for item in collections.novels | reverse %}
+  <tr>
+    <td class="date">{{ item.data.date | ym }}</td>
+    <td class="title">
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+      <span class="tags">
+        {% if item.data.rating %}<span class="tag rating">{{ item.data.rating }}</span>{% endif %}
+        {% if item.data.fandom %}<span class="tag">{{ item.data.fandom }}</span>{% endif %}
+        {% for p in item.data.pairing %}<span class="tag">{{ p }}</span>{% endfor %}
+      </span>
+    </td>
+    <td class="note">{{ item.data.type }}</td>
+  </tr>
+  {% endfor %}
+</table>

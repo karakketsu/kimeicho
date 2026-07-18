@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: Vault — 記銘帖
+nav: none
+permalink: /vault/
+---
+<div class="section-label">VAULT</div>
+<p class="section-index">
+  ここは通常の一覧には出てこない、限定公開のページです。<br>
+  現在VTuberの二次創作を置いています。
+</p>
+
+<table class="works">
+  {% for item in collections.vaultNovels | reverse %}
+  <tr>
+    <td class="date">{{ item.data.date | ym }}</td>
+    <td class="title">
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+      <span class="tags">
+        {% if item.data.rating %}<span class="tag rating">{{ item.data.rating }}</span>{% endif %}
+        {% if item.data.fandom %}<span class="tag">{{ item.data.fandom }}</span>{% endif %}
+        {% for p in item.data.pairing %}<span class="tag">{{ p }}</span>{% endfor %}
+      </span>
+    </td>
+    <td class="note">{{ item.data.type }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<p class="section-index">この一覧が見れるURLをお持ちでない方が偶然たどり着いた場合、お手数ですが閲覧はご遠慮ください。</p>

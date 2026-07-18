@@ -1,0 +1,50 @@
+---
+layout: base.njk
+nav: none
+---
+<article class="entry">
+  <p class="entry-meta">{{ date | ym }} ／ {{ type }}{% if fandom %} ／ {{ fandom }}{% endif %}</p>
+  <h1 class="entry-title">{{ title }}</h1>
+  <div class="entry-tags">
+    {% if rating %}<span class="tag rating">{{ rating }}</span>{% endif %}
+    {% for p in pairing %}<span class="tag">{{ p }}</span>{% endfor %}
+  </div>
+
+  {% if caption %}<p class="entry-caption">{{ caption }}</p>{% endif %}
+
+  {% if rating == "R-18" or rating == "R-18G" %}
+  <div class="age-gate" id="age-gate">
+    <p class="gate-rating">{{ rating }} 指定作品</p>
+    <p>
+      この作品には{% if rating == "R-18G" %}性的な描写および暴力・グロテスクな表現{% else %}性的な表現{% endif %}が含まれます。<br>
+      18歳未満の方は閲覧できません。同意の上で読み進めてください。
+    </p>
+    <button id="age-gate-button" type="button">同意して読む</button>
+  </div>
+  <div class="entry-body gated-content" id="gated-content">
+    {{ content | safe }}
+  </div>
+  <script>
+    (function(){
+      var KEY = "kimeicho-age-ok";
+      var gate = document.getElementById("age-gate");
+      var body = document.getElementById("gated-content");
+      if (sessionStorage.getItem(KEY) === "1") {
+        gate.style.display = "none";
+        body.style.display = "block";
+      }
+      document.getElementById("age-gate-button").addEventListener("click", function(){
+        sessionStorage.setItem(KEY, "1");
+        gate.style.display = "none";
+        body.style.display = "block";
+      });
+    })();
+  </script>
+  {% else %}
+  <div class="entry-body">
+    {{ content | safe }}
+  </div>
+  {% endif %}
+
+  <a class="back-link" href="/vault/">← 一覧へ戻る</a>
+</article>

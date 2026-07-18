@@ -1,0 +1,168 @@
+:root{
+  --ink:#161616;
+  --ink-soft:#5c5c5c;
+  --paper:#ffffff;
+  --line:#161616;
+  --line-faint:#c7c7c7;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Zen Kaku Gothic New", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight:400;
+  line-height:1.9;
+  letter-spacing:.02em;
+}
+.wrap{
+  max-width:680px;
+  margin:0 auto;
+  padding:0 24px;
+}
+a{color:var(--ink);}
+
+/* ==== header：二重罫の枠 ==== */
+header.site{padding:64px 0 0;}
+.frame{
+  border-top:3px double var(--line);
+  border-bottom:1px solid var(--line);
+  padding:36px 0 20px;
+  text-align:center;
+}
+.issue-no{font-size:10px;letter-spacing:.3em;color:var(--ink-soft);margin:0 0 18px;}
+.site-name{font-size:16px;font-weight:500;letter-spacing:.5em;text-indent:.5em;margin:0 0 14px;}
+.site-name a{text-decoration:none;color:var(--ink);}
+.site-tagline{font-size:11px;color:var(--ink-soft);letter-spacing:.15em;margin:0;}
+nav.site{display:flex;justify-content:center;gap:0;margin-top:28px;font-size:12px;letter-spacing:.1em;flex-wrap:wrap;}
+nav.site a{color:var(--ink);text-decoration:none;padding:0 18px;border-left:1px solid var(--line-faint);}
+nav.site a:first-child{border-left:none;}
+nav.site a.current{font-weight:700;}
+
+/* ==== section label：目次見出し ==== */
+.section-label{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.3em;color:var(--ink-soft);margin:64px 0 4px;}
+.section-label::after{content:"";flex:1;height:1px;background:var(--line-faint);}
+.section-index{font-size:11px;color:var(--ink-soft);letter-spacing:.1em;margin:0 0 24px;}
+
+/* ==== novel list：目次テーブル風 ==== */
+table.works{width:100%;border-collapse:collapse;margin:0 0 80px;font-size:14px;}
+table.works tr{border-top:1px solid var(--line-faint);}
+table.works tr:last-child{border-bottom:1px solid var(--line-faint);}
+table.works td{padding:16px 8px;vertical-align:baseline;}
+td.no{width:36px;font-size:11px;color:var(--ink-soft);border-right:1px solid var(--line-faint);}
+td.date{width:70px;font-size:11px;color:var(--ink-soft);letter-spacing:.03em;}
+td.title a{color:var(--ink);text-decoration:none;}
+td.title a:hover{border-bottom:1px solid var(--ink);}
+td.title .tags{display:block;margin-top:6px;}
+td.note{width:90px;text-align:right;font-size:11px;color:var(--ink-soft);}
+
+/* ==== タグ ==== */
+.tag{
+  display:inline-block;
+  font-size:10px;
+  letter-spacing:.05em;
+  color:var(--ink-soft);
+  border:1px solid var(--line-faint);
+  padding:2px 8px;
+  margin:0 6px 4px 0;
+}
+.tag.rating{
+  color:var(--ink);
+  border-color:var(--ink);
+  font-weight:500;
+}
+
+/* ==== インデックス系ページ（ジャンル一覧・カップリング一覧） ==== */
+ul.index-list{list-style:none;margin:0 0 80px;padding:0;}
+ul.index-list li{border-top:1px solid var(--line-faint);padding:16px 4px;display:flex;justify-content:space-between;}
+ul.index-list li:last-child{border-bottom:1px solid var(--line-faint);}
+ul.index-list a{text-decoration:none;font-size:14px;}
+ul.index-list a:hover{border-bottom:1px solid var(--ink);}
+ul.index-list .count{font-size:11px;color:var(--ink-soft);}
+
+/* ==== mini blog：ボックス罫 ==== */
+.post{border:1px solid var(--line-faint);padding:24px 24px 20px;margin:0 0 20px;}
+.post-meta{font-size:11px;color:var(--ink-soft);letter-spacing:.05em;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--line-faint);}
+.post-title{font-size:15px;font-weight:500;margin:0 0 12px;}
+.post-title a{color:var(--ink);text-decoration:none;}
+.post-body{font-size:13px;color:var(--ink);}
+
+/* ==== 個別ページ（小説本文・ブログ本文） ==== */
+article.entry{margin:64px 0 96px;}
+.entry-meta{font-size:11px;color:var(--ink-soft);letter-spacing:.05em;margin-bottom:12px;}
+.entry-title{font-size:22px;font-weight:500;margin:0 0 16px;letter-spacing:.05em;}
+.entry-tags{margin-bottom:32px;}
+.entry-caption{
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.9;
+  border-left:2px solid var(--line-faint);
+  padding-left:16px;
+  margin:0 0 40px;
+}
+.entry-body{font-size:15px;white-space:pre-wrap;}
+.entry-body p{margin:0 0 1.6em;}
+.back-link{display:inline-block;margin-top:48px;font-size:12px;color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line-faint);}
+
+/* ==== R-18 / R-18G 警告ゲート ==== */
+.age-gate{
+  border:1px solid var(--ink);
+  padding:48px 28px;
+  margin:64px 0;
+  text-align:center;
+}
+.age-gate p{font-size:13px;line-height:1.9;margin:0 0 24px;}
+.age-gate .gate-rating{font-size:11px;letter-spacing:.2em;color:var(--ink-soft);margin-bottom:16px;}
+.age-gate button{
+  font-family:inherit;
+  font-size:13px;
+  letter-spacing:.1em;
+  background:var(--ink);
+  color:var(--paper);
+  border:none;
+  padding:12px 32px;
+  cursor:pointer;
+}
+.age-gate button:hover{opacity:.85;}
+.gated-content{display:none;}
+
+footer.site{border-top:3px double var(--line);margin-top:64px;padding:24px 0 96px;text-align:center;font-size:11px;color:var(--ink-soft);letter-spacing:.1em;}
+
+/* ==== フォーム ==== */
+.request-form{margin:40px 0;}
+.form-row{margin-bottom:24px;}
+.form-row label{
+  display:block;
+  font-size:12px;
+  color:var(--ink-soft);
+  letter-spacing:.05em;
+  margin-bottom:8px;
+}
+.request-form input[type="email"],
+.request-form textarea{
+  width:100%;
+  font-family:inherit;
+  font-size:14px;
+  color:var(--ink);
+  background:var(--paper);
+  border:1px solid var(--line-faint);
+  padding:10px 12px;
+  letter-spacing:.02em;
+}
+.request-form input[type="email"]:focus,
+.request-form textarea:focus{
+  outline:none;
+  border-color:var(--ink);
+}
+.request-form textarea{resize:vertical;}
+.request-form button{
+  font-family:inherit;
+  font-size:13px;
+  letter-spacing:.1em;
+  background:var(--ink);
+  color:var(--paper);
+  border:none;
+  padding:12px 32px;
+  cursor:pointer;
+}
+.request-form button:hover{opacity:.85;}

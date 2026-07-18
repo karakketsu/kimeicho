@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: ブログ — 記銘帖
+nav: blog
+permalink: /blog/
+---
+<div class="section-label">BLOG</div>
+<p class="section-index">不定期更新</p>
+
+{% for post in collections.posts | reverse %}
+<div class="post">
+  <p class="post-meta">{{ post.data.date | ym }}</p>
+  <p class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></p>
+  <div class="post-body">{{ post.data.excerpt or "" }}</div>
+</div>
+{% endfor %}

@@ -1,0 +1,32 @@
+---
+layout: base.njk
+nav: genres
+pagination:
+  data: collections.byFandom
+  size: 1
+  alias: fandomKey
+permalink: "/genres/{{ fandomKey | slugify }}/"
+eleventyComputed:
+  title: "{{ fandomKey }} — 記銘帖"
+---
+{% set items = collections.byFandom[fandomKey] %}
+<div class="section-label">GENRE — {{ fandomKey }}</div>
+<p class="section-index">全{{ items.length }}作品</p>
+
+<table class="works">
+  {% for item in items %}
+  <tr>
+    <td class="date">{{ item.data.date | ym }}</td>
+    <td class="title">
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+      <span class="tags">
+        {% if item.data.rating %}<span class="tag rating">{{ item.data.rating }}</span>{% endif %}
+        {% for p in item.data.pairing %}<span class="tag">{{ p }}</span>{% endfor %}
+      </span>
+    </td>
+    <td class="note">{{ item.data.type }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<a class="back-link" href="/genres/">← ジャンル一覧へ戻る</a>
