@@ -7,7 +7,7 @@ pagination:
   alias: fandomKey
 permalink: "/genres/{{ fandomKey | slugify }}/"
 eleventyComputed:
-  title: "{{ fandomKey }} — 記銘帖"
+  title: "{{ fandomKey }} — 安普請"
 ---
 {% set items = collections.byFandom[fandomKey] %}
 <div class="section-label">GENRE — {{ fandomKey }}</div>

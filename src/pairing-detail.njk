@@ -7,7 +7,7 @@ pagination:
   alias: pairingKey
 permalink: "/pairings/{{ pairingKey | slugify }}/"
 eleventyComputed:
-  title: "{{ pairingKey }} — 記銘帖"
+  title: "{{ pairingKey }} — 安普請"
 ---
 {% set items = collections.byPairing[pairingKey] %}
 <div class="section-label">PAIRING — {{ pairingKey }}</div>
@@ -29,4 +29,4 @@ eleventyComputed:
   {% endfor %}
 </table>
 
-<a class="back-link" href="/pairings/">← カップリング一覧へ戻る</a>
+<a class="back-link" href="/pairings/">← CP一覧へ戻る</a>
