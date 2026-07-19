@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title or "記銘帖" }}</title>
+<title>{{ title or "安普請" }}</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
   <header class="site">
     <div class="frame">
       <p class="issue-no">ARCHIVE — SINCE {{ siteStartYear or "2019" }}</p>
-      <p class="site-name"><a href="/home/">記 銘 帖</a></p>
+      <p class="site-name"><a href="/home/">安 普 請</a></p>
       <p class="site-tagline">NOVEL ARCHIVE</p>
       <nav class="site">
         <a href="/novels/" class="{{ 'current' if nav == 'novels' }}">小説</a>
@@ -31,7 +31,7 @@
   {{ content | safe }}
 
   <footer class="site">
-    &copy; {{ siteStartYear or "2019" }}– 記銘帖
+    &copy; {{ siteStartYear or "2019" }}– 安普請
   </footer>
 
 </div>
