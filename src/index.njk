@@ -1,34 +1,66 @@
----
-layout: base.njk
-title: 安普請 — NOVEL ARCHIVE
-nav: home
----
-<div class="section-label">CONTENTS — 小説（新着）</div>
-<p class="section-index">全{{ collections.novels.length }}作品 — <a href="/novels/">すべて見る →</a></p>
-
-<table class="works">
-  {% for item in collections.novels | reverse | slice(0, 8) %}
-  <tr>
-    <td class="date">{{ item.data.date | ym }}</td>
-    <td class="title">
-      <a href="{{ item.url }}">{{ item.data.title }}</a>
-      <span class="tags">
-        {% if item.data.rating %}<span class="tag rating">{{ item.data.rating }}</span>{% endif %}
-        {% for p in item.data.pairing %}<span class="tag">{{ p }}</span>{% endfor %}
-      </span>
-    </td>
-    <td class="note">{{ item.data.type }}</td>
-  </tr>
-  {% endfor %}
-</table>
-
-<div class="section-label">BLOG</div>
-<p class="section-index">不定期更新 — <a href="/blog/">すべて見る →</a></p>
-
-{% for post in collections.posts | reverse | slice(0, 3) %}
-<div class="post">
-  <p class="post-meta">{{ post.data.date | ym }}</p>
-  <p class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></p>
-  <div class="post-body">{{ post.data.excerpt or "" }}</div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>記銘帖</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .gate-wrap{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .gate-box{
+    max-width:440px;
+    width:100%;
+    text-align:center;
+  }
+  .gate-box .site-name{ margin-bottom:8px; }
+  .gate-box .site-tagline{ margin-bottom:48px; }
+  .gate-notice{
+    border:1px solid var(--line);
+    padding:36px 28px;
+  }
+  .gate-notice p{
+    font-size:13px;
+    line-height:2;
+    color:var(--ink);
+    margin:0 0 28px;
+    text-align:left;
+  }
+  .gate-notice a.enter-button{
+    display:inline-block;
+    font-size:13px;
+    letter-spacing:.1em;
+    background:var(--ink);
+    color:var(--paper);
+    text-decoration:none;
+    padding:12px 40px;
+  }
+  .gate-notice a.enter-button:hover{ opacity:.85; }
+</style>
+</head>
+<body>
+<div class="gate-wrap">
+  <div class="gate-box">
+    <p class="site-name">記 銘 帖</p>
+    <p class="site-tagline">NOVEL ARCHIVE</p>
+    <div class="gate-notice">
+      <p>
+        当サイトには、既存の作品・キャラクターを題材にした二次創作物が含まれます。<br><br>
+        原作および原作者・関係者とは一切関係がありません。<br>
+        二次創作にご理解のある方のみ、閲覧をお願いいたします。
+      </p>
+      <a class="enter-button" href="/home/">入る</a>
+    </div>
+  </div>
 </div>
-{% endfor %}
+</body>
+</html>
