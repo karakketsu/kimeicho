@@ -4,7 +4,7 @@ title: "みす・みす・みす"
 date: 2025-04-17
 type: "短編"
 fandom: "VRAINS"
-pairing: ["Ai遊", "遊Ai"]
+pairing: ["Ai遊Ai"]
 rating: 全年齢
 caption: "メカバレ"
 ---
