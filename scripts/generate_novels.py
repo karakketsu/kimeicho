@@ -72,7 +72,9 @@ def main():
             errors.append(f"{idx}行目: 本文ファイルが見つかりません → {txt_path.name}")
             continue
 
-        body = txt_path.read_text(encoding="utf-8").strip()
+        # 前後の空行・改行だけ除去する。.strip()だと本文1行目の全角スペース（字下げ）まで
+        # 消えてしまうため、除去対象を明示的にBOM・改行・半角スペース・タブに限定する。
+        body = txt_path.read_text(encoding="utf-8").strip("﻿\r\n \t")
 
         rating_str = str(rating).strip() if rating else ""
         if rating_str not in VALID_RATINGS:

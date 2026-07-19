@@ -12,7 +12,7 @@ body{
   color:var(--ink);
   font-family:"Zen Kaku Gothic New", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight:400;
-  line-height:1.9;
+  line-height:1.6;
   letter-spacing:.02em;
 }
 .wrap{
@@ -97,13 +97,15 @@ article.entry{margin:64px 0 96px;}
 .entry-caption{
   font-size:13px;
   color:var(--ink-soft);
-  line-height:1.9;
   border-left:2px solid var(--line-faint);
   padding-left:16px;
   margin:0 0 40px;
 }
-.entry-body{font-size:15px;white-space:pre-wrap;}
+.entry-body{font-size:15px;white-space:pre-wrap;line-height:1.9;}
 .entry-body p{margin:0 0 1.6em;}
+/* 小説本文以外の通常ページ用（about・request・blogなど。改行を詰めた分、行間も本文より狭い） */
+.page-body{font-size:15px;}
+.page-body p{margin:0 0 1.6em;}
 .back-link{display:inline-block;margin-top:48px;font-size:12px;color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line-faint);}
 
 /* ==== R-18 / R-18G 警告ゲート ==== */
@@ -113,7 +115,7 @@ article.entry{margin:64px 0 96px;}
   margin:64px 0;
   text-align:center;
 }
-.age-gate p{font-size:13px;line-height:1.9;margin:0 0 24px;}
+.age-gate p{font-size:13px;margin:0 0 24px;}
 .age-gate .gate-rating{font-size:11px;letter-spacing:.2em;color:var(--ink-soft);margin-bottom:16px;}
 .age-gate button{
   font-family:inherit;
