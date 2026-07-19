@@ -79,6 +79,8 @@ ul.index-list li:last-child{border-bottom:1px solid var(--line-faint);}
 ul.index-list a{text-decoration:none;font-size:14px;}
 ul.index-list a:hover{border-bottom:1px solid var(--ink);}
 ul.index-list .count{font-size:11px;color:var(--ink-soft);}
+ul.index-list li.key-link{border-top:1px dotted var(--line-faint);}
+ul.index-list li.key-link a{color:var(--ink-soft);}
 
 /* ==== mini blog：ボックス罫 ==== */
 .post{border:1px solid var(--line-faint);padding:24px 24px 20px;margin:0 0 20px;}
