@@ -20,6 +20,7 @@ permalink: /novels/
       </span>
     </td>
     <td class="note">{{ item.data.type }}</td>
+    <td class="charcount">{{ item.templateContent | charCount | numberFormat }}字</td>
   </tr>
   {% endfor %}
 </table>

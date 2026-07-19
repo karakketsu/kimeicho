@@ -3,7 +3,7 @@ layout: base.njk
 nav: novels
 ---
 <article class="entry">
-  <p class="entry-meta">{{ date | ym }} ／ {{ type }}{% if fandom %} ／ {{ fandom }}{% endif %}</p>
+  <p class="entry-meta">{{ date | ym }} ／ {{ type }}{% if fandom %} ／ {{ fandom }}{% endif %} ／ {{ content | charCount | numberFormat }}字</p>
   <h1 class="entry-title">{{ title }}</h1>
   <div class="entry-tags">
     {% if rating %}<span class="tag rating">{{ rating }}</span>{% endif %}

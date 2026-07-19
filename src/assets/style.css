@@ -5,6 +5,29 @@
   --line:#161616;
   --line-faint:#c7c7c7;
 }
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#f0f0f0;
+    --ink-soft:#a3a3a3;
+    --paper:#161616;
+    --line:#f0f0f0;
+    --line-faint:#3a3a3a;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#f0f0f0;
+  --ink-soft:#a3a3a3;
+  --paper:#161616;
+  --line:#f0f0f0;
+  --line-faint:#3a3a3a;
+}
+:root[data-theme="light"]{
+  --ink:#161616;
+  --ink-soft:#5c5c5c;
+  --paper:#ffffff;
+  --line:#161616;
+  --line-faint:#c7c7c7;
+}
 *{box-sizing:border-box;}
 body{
   margin:0;
@@ -14,6 +37,7 @@ body{
   font-weight:400;
   line-height:1.6;
   letter-spacing:.02em;
+  transition:background-color .15s ease, color .15s ease;
 }
 .wrap{
   max-width:680px;
@@ -38,6 +62,31 @@ nav.site{display:flex;justify-content:center;gap:0;margin-top:28px;font-size:12p
 nav.site a{color:var(--ink);text-decoration:none;padding:0 18px;border-left:1px solid var(--line-faint);}
 nav.site a:first-child{border-left:none;}
 nav.site a.current{font-weight:700;}
+.theme-toggle{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:1em;
+  margin:0 0 0 18px;
+  padding:0 0 0 18px;
+  border:none;
+  border-left:1px solid var(--line-faint);
+  background:none;
+  color:var(--ink);
+  font-family:inherit;
+  font-size:12px;
+  line-height:1;
+  cursor:pointer;
+}
+.theme-toggle:hover{opacity:.7;}
+.theme-toggle.fixed{
+  position:fixed;
+  top:20px;
+  right:20px;
+  margin:0;
+  padding:6px;
+  border-left:none;
+}
 
 /* ==== section label：目次見出し ==== */
 .section-label{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.3em;color:var(--ink-soft);margin:64px 0 4px;}
@@ -54,7 +103,8 @@ td.date{width:70px;font-size:11px;color:var(--ink-soft);letter-spacing:.03em;}
 td.title a{color:var(--ink);text-decoration:none;}
 td.title a:hover{border-bottom:1px solid var(--ink);}
 td.title .tags{display:block;margin-top:6px;}
-td.note{width:90px;text-align:right;font-size:11px;color:var(--ink-soft);}
+td.note{width:70px;text-align:right;font-size:11px;color:var(--ink-soft);}
+td.charcount{width:76px;text-align:right;font-size:11px;color:var(--ink-soft);letter-spacing:0;}
 
 /* ==== タグ ==== */
 .tag{

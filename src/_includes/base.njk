@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ title or "安普請" }}</title>
 <meta name="robots" content="noindex, nofollow">
+<script>
+(function(){
+  try{
+    var t=localStorage.getItem('kimeicho-theme');
+    if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}
+  }catch(e){}
+})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,9 +32,31 @@
         <a href="/pairings/" class="{{ 'current' if nav == 'pairings' }}">CP</a>
         <a href="/blog/" class="{{ 'current' if nav == 'blog' }}">blog</a>
         <a href="/about/" class="{{ 'current' if nav == 'about' }}">about</a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="テーマを切り替える"></button>
       </nav>
     </div>
   </header>
+  <script>
+  (function(){
+    var btn=document.getElementById('theme-toggle');
+    var root=document.documentElement;
+    function current(){
+      var t=root.getAttribute('data-theme');
+      if(t)return t;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+    }
+    function paint(){
+      btn.textContent = current()==='dark' ? '☀' : '☾';
+    }
+    paint();
+    btn.addEventListener('click', function(){
+      var next = current()==='dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try{ localStorage.setItem('kimeicho-theme', next); }catch(e){}
+      paint();
+    });
+  })();
+  </script>
 
   {{ content | safe }}
 

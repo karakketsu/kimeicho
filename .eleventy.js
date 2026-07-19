@@ -71,6 +71,24 @@ module.exports = function (eleventyConfig) {
     return `${y}.${m}`;
   });
 
+  // 本文（HTML）からタグを除いた文字数を数えるフィルタ（句読点・改行込みの単純な文字数）
+  eleventyConfig.addFilter("charCount", (content) => {
+    if (!content) return 0;
+    return String(content).replace(/<[^>]*>/g, "").length;
+  });
+
+  // 数値を3桁カンマ区切りにするフィルタ
+  eleventyConfig.addFilter("numberFormat", (num) => {
+    return Number(num).toLocaleString("en-US");
+  });
+
+  // 配列の先頭からN件だけ取り出すフィルタ（Nunjucks標準のsliceはJS配列のslice(start,end)とは
+  // 挙動が異なる「N分割」フィルタのため、代わりにこちらを使う）
+  eleventyConfig.addFilter("limit", (arr, n) => {
+    if (!arr) return [];
+    return arr.slice(0, n);
+  });
+
   return {
     dir: {
       input: "src",
