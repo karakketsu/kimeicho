@@ -3,7 +3,7 @@ layout: novel.njk
 title: "サウンド・オブ・テンショーイン"
 date: 2024-10-22
 type: "短編"
-fandom: "ｅｎｓｔ"
+fandom: "enst"
 pairing: ["夢"]
 rating: 全年齢
 caption: "インド映画の天祥院"
