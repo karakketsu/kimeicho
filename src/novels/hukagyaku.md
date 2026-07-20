@@ -3,7 +3,7 @@ layout: novel.njk
 title: "不可逆"
 date: 2020-11-13
 type: "短編"
-fandom: "V3"
+fandom: ["V3"]
 pairing: ["最王"]
 rating: 全年齢
 ---

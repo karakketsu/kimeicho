@@ -3,7 +3,7 @@ layout: novel.njk
 title: "歯固め"
 date: 2023-06-17
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

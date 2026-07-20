@@ -3,7 +3,7 @@ layout: novel.njk
 title: "夕焼けチャイム"
 date: 2024-10-03
 type: "短編"
-fandom: "怪8"
+fandom: ["怪8"]
 pairing: ["CPなし"]
 rating: 全年齢
 ---

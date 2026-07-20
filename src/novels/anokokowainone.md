@@ -3,7 +3,7 @@ layout: novel.njk
 title: "あの子怖いのね、ただの高校生とは思えないわよ"
 date: 2020-11-27
 type: "短編"
-fandom: "V3"
+fandom: ["V3"]
 pairing: ["最王"]
 rating: 全年齢
 ---

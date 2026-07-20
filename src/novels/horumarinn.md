@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ホルマリン漬け"
 date: 2022-06-18
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["ミザカイ"]
 rating: R-18
 ---

@@ -3,7 +3,7 @@ layout: novel.njk
 title: "いたみわけ"
 date: 2022-04-09
 type: "短編"
-fandom: "HQ!!"
+fandom: ["HQ!!"]
 pairing: ["佐久古", "古佐久"]
 rating: 全年齢
 ---

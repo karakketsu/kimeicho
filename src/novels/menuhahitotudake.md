@@ -3,7 +3,7 @@ layout: novel.njk
 title: "メニューはひとつだけ"
 date: 2025-10-09
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["絵心甚八", "帝襟アンリ"]
 rating: 全年齢
 caption: "アンリちゃんの失恋"

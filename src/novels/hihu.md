@@ -3,7 +3,7 @@ layout: novel.njk
 title: "皮膚"
 date: 2023-12-17
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

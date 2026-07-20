@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ワンライ - 鼻血/怪我"
 date: 2023-08-12
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

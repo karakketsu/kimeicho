@@ -3,7 +3,7 @@ layout: novel.njk
 title: "かぜっぴき凛"
 date: 2023-08-01
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

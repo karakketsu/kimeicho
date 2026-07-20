@@ -3,7 +3,7 @@ layout: novel.njk
 title: "わたしのすきなひと"
 date: 2022-05-28
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["CPなし"]
 rating: 全年齢
 caption: "ZEXAL見終わって一番最初に書いたもの　ちょっとクサいけど思い出の一本です"

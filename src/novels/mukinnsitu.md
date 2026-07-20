@@ -3,7 +3,7 @@ layout: novel.njk
 title: "無菌室"
 date: 2023-05-25
 type: "短編"
-fandom: "A5"
+fandom: ["A5"]
 pairing: ["ユゴユリ"]
 rating: 全年齢
 ---

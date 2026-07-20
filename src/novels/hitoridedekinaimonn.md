@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ひとりでできないもん！"
 date: 2024-09-08
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["CPなし"]
 rating: 全年齢
 ---

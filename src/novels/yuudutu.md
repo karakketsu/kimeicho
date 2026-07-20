@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ゆうずつ"
 date: 2022-07-10
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["CPなし"]
 rating: 全年齢
 caption: "遊馬の誕生日祝いたいよ〜〜！！で凌牙とカイトがモタモタしてる話　というより会話文　意外と会話できる二人だったりしないかなという妄想……

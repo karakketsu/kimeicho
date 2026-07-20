@@ -3,7 +3,7 @@ layout: novel.njk
 title: "いさりんバレンタイン"
 date: 2024-02-14
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

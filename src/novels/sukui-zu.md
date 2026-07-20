@@ -3,7 +3,7 @@ layout: novel.njk
 title: "スクイーズじゃ足りない"
 date: 2024-10-17
 type: "短編"
-fandom: "怪8"
+fandom: ["怪8"]
 pairing: ["東鳴"]
 rating: R-18
 ---

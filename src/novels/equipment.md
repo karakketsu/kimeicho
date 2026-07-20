@@ -3,7 +3,7 @@ layout: novel.njk
 title: "イクイップメント"
 date: 2022-01-28
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["カク蘭"]
 rating: 全年齢
 caption: "リクエストをいただいて書いたもの"

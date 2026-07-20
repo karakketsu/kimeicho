@@ -3,7 +3,7 @@ layout: novel.njk
 title: "断崖"
 date: 2024-09-23
 type: "短編"
-fandom: "怪8"
+fandom: ["怪8"]
 pairing: ["CPなし"]
 rating: 全年齢
 caption: "キコルちゃんの結婚前夜"

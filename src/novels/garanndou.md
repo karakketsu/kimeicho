@@ -3,7 +3,7 @@ layout: novel.njk
 title: "がらんどうの筆の跡"
 date: 2022-07-04
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["CPなし"]
 rating: 全年齢
 caption: "オービタルとカイトの会話文"

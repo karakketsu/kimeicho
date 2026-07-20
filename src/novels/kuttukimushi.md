@@ -3,7 +3,7 @@ layout: novel.njk
 title: "くっつきむし"
 date: 2024-10-13
 type: "短編"
-fandom: "enst"
+fandom: ["enst"]
 pairing: ["夢"]
 rating: 全年齢
 caption: "天祥院と喧嘩したい"

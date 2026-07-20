@@ -3,7 +3,7 @@ layout: novel.njk
 title: "盗人萩"
 date: 2023-05-21
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["玲凪"]
 rating: 全年齢
 ---

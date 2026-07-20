@@ -3,7 +3,7 @@ layout: novel.njk
 title: "イロージョン"
 date: 2022-06-04
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["遊カイ", "ドロカイ", "ゆまこと"]
 rating: 全年齢
 ---

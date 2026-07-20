@@ -22,6 +22,7 @@
 <div class="wrap">
 
   <header class="site">
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="テーマを切り替える"></button>
     <div class="frame">
       <p class="issue-no">ARCHIVE — SINCE {{ siteStartYear or "2017" }}</p>
       <p class="site-name"><a href="/home/">安 普 請</a></p>
@@ -32,7 +33,6 @@
         <a href="/pairings/" class="{{ 'current' if nav == 'pairings' }}">CP</a>
         <a href="/blog/" class="{{ 'current' if nav == 'blog' }}">blog</a>
         <a href="/about/" class="{{ 'current' if nav == 'about' }}">about</a>
-        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="テーマを切り替える"></button>
       </nav>
     </div>
   </header>

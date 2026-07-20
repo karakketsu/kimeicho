@@ -3,7 +3,7 @@ layout: novel.njk
 title: "春マイSS"
 date: 2022-01-28
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["春マイ"]
 rating: 全年齢
 ---

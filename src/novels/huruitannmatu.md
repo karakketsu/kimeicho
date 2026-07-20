@@ -3,7 +3,7 @@ layout: novel.njk
 title: "古い端末は回収でよろしいですか？"
 date: 2022-01-28
 type: "中編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["マイ春マイ"]
 rating: 全年齢
 ---

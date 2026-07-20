@@ -3,7 +3,7 @@ layout: vault-novel.njk
 title: "いくつになったら"
 date: 2025-01-28
 type: "短編"
-fandom: "鍵付き"
+fandom: ["鍵付き"]
 pairing: ["CPなし"]
 rating: 全年齢
 ---

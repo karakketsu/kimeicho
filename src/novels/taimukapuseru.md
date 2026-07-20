@@ -3,7 +3,7 @@ layout: novel.njk
 title: "タイムカプセルは墓の下"
 date: 2024-12-10
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["氷烏"]
 rating: 全年齢
 ---

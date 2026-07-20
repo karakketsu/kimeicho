@@ -3,7 +3,7 @@ layout: novel.njk
 title: "遣つ付け仕事"
 date: 2022-01-28
 type: "長編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["CPなし"]
 rating: R-18G
 ---

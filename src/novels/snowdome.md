@@ -3,7 +3,7 @@ layout: novel.njk
 title: "SNOWDOME（常温）"
 date: 2024-09-11
 type: "短編"
-fandom: "怪8"
+fandom: ["怪8"]
 pairing: ["CPなし"]
 rating: 全年齢
 ---

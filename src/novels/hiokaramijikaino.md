@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ひおからみじかいの2本"
 date: 2023-12-06
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["氷烏"]
 rating: 全年齢
 ---

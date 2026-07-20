@@ -3,7 +3,7 @@ layout: novel.njk
 title: "寧日なし"
 date: 2022-01-30
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["CPなし"]
 rating: 全年齢
 caption: "三途と対話への向かい方"

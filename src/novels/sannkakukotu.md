@@ -3,7 +3,7 @@ layout: novel.njk
 title: "三角骨"
 date: 2022-05-31
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["遊ベク", "ベク遊"]
 rating: 全年齢
 ---

@@ -3,7 +3,7 @@ layout: novel.njk
 title: "サンドボックス・トリックスター"
 date: 2024-03-05
 type: "短編"
-fandom: "怪8"
+fandom: ["怪8"]
 pairing: ["氷烏"]
 rating: 全年齢
 ---

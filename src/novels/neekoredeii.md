@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ねえ、これでいい"
 date: 2022-01-28
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["ム三ム"]
 rating: 全年齢
 ---

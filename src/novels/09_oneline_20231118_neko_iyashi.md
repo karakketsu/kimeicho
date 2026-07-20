@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ワンライ - 猫/癒し"
 date: 2023-11-18
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

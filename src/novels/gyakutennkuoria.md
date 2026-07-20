@@ -3,7 +3,7 @@ layout: novel.njk
 title: "逆転クオリア"
 date: 2022-06-06
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["ドロカイ"]
 rating: 全年齢
 ---

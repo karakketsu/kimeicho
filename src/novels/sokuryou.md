@@ -3,7 +3,7 @@ layout: novel.njk
 title: "測量"
 date: 2022-06-22
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["ミザカイミザ"]
 rating: 全年齢
 ---

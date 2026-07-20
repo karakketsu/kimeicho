@@ -3,7 +3,7 @@ layout: vault-novel.njk
 title: "orerube_yohukasi"
 date: 2025-12-31
 type: "短編"
-fandom: "鍵付き"
+fandom: ["鍵付き"]
 pairing: ["夢"]
 rating: 全年齢
 ---

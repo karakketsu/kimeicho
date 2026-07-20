@@ -3,7 +3,7 @@ layout: novel.njk
 title: "羽化"
 date: 2022-06-11
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["カイ遊カイ"]
 rating: 全年齢
 ---

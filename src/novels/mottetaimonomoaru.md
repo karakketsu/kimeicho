@@ -3,7 +3,7 @@ layout: novel.njk
 title: "もってたいものもある"
 date: 2023-05-28
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["冴凛"]
 rating: R-18
 ---

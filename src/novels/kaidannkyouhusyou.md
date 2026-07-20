@@ -3,7 +3,7 @@ layout: novel.njk
 title: "階段恐怖症"
 date: 2023-06-10
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: R-18
 ---

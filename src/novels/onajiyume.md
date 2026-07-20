@@ -3,7 +3,7 @@ layout: novel.njk
 title: "同じ夢"
 date: 2022-07-23
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["ドロカイ"]
 rating: R-18
 ---

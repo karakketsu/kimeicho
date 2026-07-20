@@ -3,7 +3,7 @@ layout: novel.njk
 title: "幇助犯"
 date: 2022-06-28
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["カイ遊カイ"]
 rating: 全年齢
 ---

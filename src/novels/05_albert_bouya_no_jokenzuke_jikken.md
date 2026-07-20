@@ -3,7 +3,7 @@ layout: novel.njk
 title: "アルバート坊やの条件付け実験"
 date: 2023-08-01
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

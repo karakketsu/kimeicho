@@ -3,7 +3,7 @@ layout: novel.njk
 title: "言い残したことといえば"
 date: 2024-09-30
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["氷烏"]
 rating: 全年齢
 ---

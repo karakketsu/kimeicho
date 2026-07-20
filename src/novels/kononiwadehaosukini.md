@@ -3,7 +3,7 @@ layout: novel.njk
 title: "この庭ではお好きに"
 date: 2023-12-27
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

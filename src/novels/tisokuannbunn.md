@@ -3,7 +3,7 @@ layout: novel.njk
 title: "知足安分"
 date: 2022-01-28
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["ココイヌココ"]
 rating: 全年齢
 caption: "友達の誕生日プレゼントに贈った話！お気に入りです"

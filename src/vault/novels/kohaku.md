@@ -3,7 +3,7 @@ layout: vault-novel.njk
 title: "琥珀"
 date: 2025-06-16
 type: "短編"
-fandom: "鍵付き"
+fandom: ["鍵付き"]
 pairing: ["CPなし"]
 rating: 全年齢
 caption: "星導ショウって梶井基次郎の世界観なんじゃないのって！"

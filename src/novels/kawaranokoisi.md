@@ -3,7 +3,7 @@ layout: novel.njk
 title: "河原の小石"
 date: 2020-11-15
 type: "短編"
-fandom: "V3"
+fandom: ["V3"]
 pairing: ["最王"]
 rating: R-18
 ---

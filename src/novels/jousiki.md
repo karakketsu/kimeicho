@@ -3,7 +3,7 @@ layout: novel.njk
 title: "常識をあげるね"
 date: 2017-01-01
 type: "短編"
-fandom: "HQ!!"
+fandom: ["HQ!!"]
 pairing: ["佐久古"]
 rating: R-18
 caption: "いとこ発覚前の化石"

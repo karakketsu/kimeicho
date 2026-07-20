@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ふーど♡めいど♡うぃず♡らぶ"
 date: 2024-09-17
 type: "短編"
-fandom: "怪8"
+fandom: ["怪8"]
 pairing: ["CPなし"]
 rating: 全年齢
 ---

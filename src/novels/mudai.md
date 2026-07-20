@@ -3,7 +3,7 @@ layout: novel.njk
 title: "無題"
 date: 2024-08-04
 type: "短編"
-fandom: "enst"
+fandom: ["enst"]
 pairing: ["CPなし"]
 rating: 全年齢
 caption: "一彩と藍良"

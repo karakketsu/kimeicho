@@ -3,7 +3,7 @@ layout: novel.njk
 title: "A man can die but once"
 date: 2023-08-26
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["ばろいさ"]
 rating: R-18
 ---

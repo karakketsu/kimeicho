@@ -3,7 +3,7 @@ layout: novel.njk
 title: "歴史に恋"
 date: 2024-09-01
 type: "短編"
-fandom: "怪8"
+fandom: ["怪8"]
 pairing: ["カフレノカフ"]
 rating: 全年齢
 ---

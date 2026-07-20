@@ -3,7 +3,7 @@ layout: novel.njk
 title: "マラソン一緒に走ろうね"
 date: 2022-05-03
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["マイ春"]
 rating: R-18
 ---

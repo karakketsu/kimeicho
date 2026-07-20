@@ -88,7 +88,9 @@ def main():
         if hasattr(date, "strftime"):
             date_str = date.strftime("%Y-%m-%d")
 
-        fandom_str = str(fandom).strip() if fandom else ""
+        fandom_list = []
+        if fandom:
+            fandom_list = [f.strip() for f in str(fandom).split(",") if f.strip()]
         pairing_list = []
         if pairing:
             pairing_list = [p.strip() for p in str(pairing).split(",") if p.strip()]
@@ -99,8 +101,9 @@ def main():
         front_matter = ["---", f"layout: {layout_name}", f"title: {yaml_escape(title)}", f"date: {date_str}"]
         if work_type:
             front_matter.append(f"type: {yaml_escape(work_type)}")
-        if fandom_str:
-            front_matter.append(f"fandom: {yaml_escape(fandom_str)}")
+        if fandom_list:
+            fandom_yaml = "[" + ", ".join(yaml_escape(f) for f in fandom_list) + "]"
+            front_matter.append(f"fandom: {fandom_yaml}")
         if pairing_list:
             pairing_yaml = "[" + ", ".join(yaml_escape(p) for p in pairing_list) + "]"
             front_matter.append(f"pairing: {pairing_yaml}")

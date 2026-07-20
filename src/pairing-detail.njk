@@ -21,7 +21,7 @@ eleventyComputed:
       <a href="{{ item.url }}">{{ item.data.title }}</a>
       <span class="tags">
         {% if item.data.rating %}<span class="tag rating">{{ item.data.rating }}</span>{% endif %}
-        {% if item.data.fandom %}<span class="tag">{{ item.data.fandom }}</span>{% endif %}
+        {% for f in item.data.fandom %}<span class="tag">{{ f }}</span>{% endfor %}
       </span>
     </td>
     <td class="note">{{ item.data.type }}</td>

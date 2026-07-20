@@ -3,7 +3,7 @@ layout: novel.njk
 title: "肋骨を器にしてパフェを作ろう"
 date: 2023-05-28
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: R-18
 ---

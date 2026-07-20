@@ -3,7 +3,7 @@ layout: novel.njk
 title: "軟骨"
 date: 2024-09-04
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

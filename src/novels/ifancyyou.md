@@ -3,7 +3,7 @@ layout: novel.njk
 title: "アイ・ファンシー・ユー"
 date: 2022-06-19
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["遊ベク", "ゆまこと"]
 rating: 全年齢
 ---

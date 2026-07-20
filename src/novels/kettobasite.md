@@ -3,7 +3,7 @@ layout: novel.njk
 title: "蹴っ飛ばして、明日"
 date: 2025-11-24
 type: "短編"
-fandom: "VRAINS"
+fandom: ["VRAINS"]
 pairing: ["了尊了"]
 rating: 全年齢
 caption: "男二人きりでラブホテル、何も起きないはずはある"

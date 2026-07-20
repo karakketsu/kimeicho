@@ -3,7 +3,7 @@ layout: novel.njk
 title: "安楽死ジェットコースター"
 date: 2023-05-17
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

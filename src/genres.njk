@@ -8,10 +8,10 @@ permalink: /genres/
 <p class="section-index">ジャンル(原作)ごとの一覧</p>
 
 <ul class="index-list">
-  {% for fandom, items in collections.byFandom %}
-  <li>
-    <a href="/genres/{{ fandom | slugify }}/">{{ fandom }}</a>
-    <span class="count">{{ items.length }}作品</span>
+  {% for entry in collections.fandomList %}
+  <li class="{{ 'favorite' if entry.fandom == 'お気に入り' }}">
+    <a href="/genres/{{ entry.fandom | slugify }}/">{% if entry.fandom == 'お気に入り' %}★ {% endif %}{{ entry.fandom }}</a>
+    <span class="count">{{ entry.items.length }}作品</span>
   </li>
   {% endfor %}
   <li class="key-link"><a href="/vault/">🔒 鍵</a></li>

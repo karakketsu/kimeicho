@@ -3,7 +3,7 @@ layout: novel.njk
 title: "スパイダー"
 date: 2022-07-20
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["オビカイ"]
 rating: 全年齢
 ---

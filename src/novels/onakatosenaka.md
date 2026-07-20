@@ -3,7 +3,7 @@ layout: novel.njk
 title: "おなかとせなか"
 date: 2022-08-04
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["カイ遊カイ"]
 rating: 全年齢
 ---

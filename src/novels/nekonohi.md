@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ねこの日"
 date: 2025-08-23
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["氷烏"]
 rating: 全年齢
 caption: "かわいこぶってる氷織"

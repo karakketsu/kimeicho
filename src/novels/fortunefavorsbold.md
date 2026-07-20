@@ -3,7 +3,7 @@ layout: novel.njk
 title: "Fortune favors the bold."
 date: 2023-12-30
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["氷烏"]
 rating: 全年齢
 ---

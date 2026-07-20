@@ -3,7 +3,7 @@ layout: novel.njk
 title: "実りある日"
 date: 2024-08-20
 type: "短編"
-fandom: "怪8"
+fandom: ["怪8"]
 pairing: ["東鳴"]
 rating: 全年齢
 ---

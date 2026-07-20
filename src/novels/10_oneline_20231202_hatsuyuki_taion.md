@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ワンライ - 初雪/体温"
 date: 2023-12-02
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["潔凛"]
 rating: 全年齢
 ---

@@ -7,10 +7,52 @@ permalink: /blog/
 <div class="section-label">BLOG</div>
 <p class="section-index">不定期更新</p>
 
-{% for post in collections.posts | reverse %}
-<div class="post">
-  <p class="post-meta">{{ post.data.date | ym }}</p>
-  <p class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></p>
-  <div class="post-body">{{ post.data.excerpt or "" }}</div>
+<div class="accordion">
+  {% for group in collections.postsByMonth %}
+  <div class="month-block">
+    <button type="button" class="month-header" aria-expanded="{{ 'true' if loop.index0 == 0 else 'false' }}" aria-controls="month-{{ group.monthKey }}">
+      <span class="month-label">{{ group.monthLabel }}</span>
+      <span class="month-count">{{ group.posts.length }}件</span>
+      <span class="month-arrow" aria-hidden="true">▾</span>
+    </button>
+    <div class="month-body{% if loop.index0 == 0 %} is-open{% endif %}" id="month-{{ group.monthKey }}">
+      <ul class="month-list">
+        {% for post in group.posts %}
+        <li>
+          <span class="post-day">{{ post.data.date | dd }}</span>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% endfor %}
 </div>
-{% endfor %}
+
+<script>
+(function(){
+  var headers = document.querySelectorAll('.month-header');
+  headers.forEach(function(btn){
+    var body = document.getElementById(btn.getAttribute('aria-controls'));
+    if (!body) return;
+    if (body.classList.contains('is-open')) {
+      body.style.maxHeight = body.scrollHeight + 'px';
+    }
+    btn.addEventListener('click', function(){
+      var isOpen = btn.getAttribute('aria-expanded') === 'true';
+      if (isOpen) {
+        body.style.maxHeight = body.scrollHeight + 'px';
+        requestAnimationFrame(function(){
+          body.style.maxHeight = '0px';
+        });
+        btn.setAttribute('aria-expanded', 'false');
+        body.classList.remove('is-open');
+      } else {
+        btn.setAttribute('aria-expanded', 'true');
+        body.classList.add('is-open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+      }
+    });
+  });
+})();
+</script>

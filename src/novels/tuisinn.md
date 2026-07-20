@@ -3,7 +3,7 @@ layout: novel.njk
 title: "追伸"
 date: 2022-07-30
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["カイ遊"]
 rating: R-18
 ---

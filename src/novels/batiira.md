@@ -3,7 +3,7 @@ layout: novel.njk
 title: "蜂楽と潔"
 date: 2023-05-01
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["CPなし"]
 rating: 全年齢
 ---

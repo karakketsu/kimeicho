@@ -3,7 +3,7 @@ layout: novel.njk
 title: "末永くお幸せに"
 date: 2022-05-03
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["とらふゆとら"]
 rating: R-18
 ---

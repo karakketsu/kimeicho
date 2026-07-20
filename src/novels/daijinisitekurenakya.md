@@ -3,7 +3,7 @@ layout: novel.njk
 title: "大事にしてくれなきゃやーなの"
 date: 2024-09-25
 type: "短編"
-fandom: "怪8"
+fandom: ["怪8"]
 pairing: ["長谷鳴"]
 rating: 全年齢
 ---

@@ -3,7 +3,7 @@ layout: novel.njk
 title: "三面鏡"
 date: 2023-06-18
 type: "短編"
-fandom: "BLUE LOCK"
+fandom: ["BLUE LOCK"]
 pairing: ["玲凪"]
 rating: R-18
 ---

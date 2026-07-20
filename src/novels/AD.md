@@ -3,7 +3,7 @@ layout: novel.njk
 title: "AD"
 date: 2022-06-13
 type: "短編"
-fandom: "ZAXAL"
+fandom: ["ZAXAL"]
 pairing: ["遊カイ"]
 rating: R-18
 ---

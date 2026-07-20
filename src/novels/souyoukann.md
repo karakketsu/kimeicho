@@ -3,7 +3,7 @@ layout: novel.njk
 title: "掻痒感"
 date: 2022-05-03
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["三ム"]
 rating: R-18
 ---

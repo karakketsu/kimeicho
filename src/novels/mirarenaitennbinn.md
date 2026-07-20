@@ -3,7 +3,7 @@ layout: novel.njk
 title: "見られない天秤"
 date: 2022-03-21
 type: "短編"
-fandom: "HQ!!"
+fandom: ["HQ!!"]
 pairing: ["佐久古佐久"]
 rating: 全年齢
 ---

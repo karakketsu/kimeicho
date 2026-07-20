@@ -3,7 +3,7 @@ layout: novel.njk
 title: "雪"
 date: 2022-01-28
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["CPなし"]
 rating: 全年齢
 caption: "タグをお借りして書いたもの"

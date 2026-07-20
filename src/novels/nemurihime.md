@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ねむり姫、勝手に起きるし歩いてゆける"
 date: 2022-05-03
 type: "短編"
-fandom: "東リベ"
+fandom: ["東リベ"]
 pairing: ["とらふゆ", "ふゆとら"]
 rating: R-18
 ---
