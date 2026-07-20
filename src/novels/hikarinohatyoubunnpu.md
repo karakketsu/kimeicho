@@ -3,7 +3,7 @@ layout: novel.njk
 title: "光の波長分布の異なり"
 date: 2022-01-28
 type: "短編"
-fandom: ["東リベ"]
+fandom: ["東リベ", "お気に入り"]
 pairing: ["ココイヌ"]
 rating: 全年齢
 ---

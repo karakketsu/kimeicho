@@ -3,7 +3,7 @@ layout: novel.njk
 title: "青年終末旅行"
 date: 2022-02-09
 type: "短編"
-fandom: ["東リベ"]
+fandom: ["東リベ", "お気に入り"]
 pairing: ["マイ春マイ", "タケヒナ"]
 rating: 全年齢
 ---

@@ -3,7 +3,7 @@ layout: novel.njk
 title: "放し飼い"
 date: 2024-01-13
 type: "短編"
-fandom: ["BLUE LOCK"]
+fandom: ["BLUE LOCK", "お気に入り"]
 pairing: ["ロキシャルロキ"]
 rating: 全年齢
 ---

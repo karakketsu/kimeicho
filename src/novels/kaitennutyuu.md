@@ -3,7 +3,7 @@ layout: novel.njk
 title: "回転宇宙"
 date: 2022-03-28
 type: "短編"
-fandom: ["HQ!!"]
+fandom: ["HQ!!", "お気に入り"]
 pairing: ["研日研"]
 rating: 全年齢
 ---

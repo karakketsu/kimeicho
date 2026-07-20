@@ -3,7 +3,7 @@ layout: novel.njk
 title: "Sugar and spice and everything nice."
 date: 2022-04-26
 type: "短編"
-fandom: ["HQ!!"]
+fandom: ["HQ!!", "お気に入り"]
 pairing: ["佐久侑", "侑佐久"]
 rating: 全年齢
 ---

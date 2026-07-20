@@ -3,7 +3,7 @@ layout: novel.njk
 title: "成層圏の練乳がけ"
 date: 2024-09-04
 type: "短編"
-fandom: ["怪8"]
+fandom: ["怪8", "お気に入り"]
 pairing: ["長谷鳴"]
 rating: R-18
 ---

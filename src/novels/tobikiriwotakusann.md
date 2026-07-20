@@ -3,7 +3,7 @@ layout: novel.njk
 title: "とびきりをたくさんくるんであげよう"
 date: 2022-06-11
 type: "短編"
-fandom: ["ZAXAL"]
+fandom: ["ZAXAL", "お気に入り"]
 pairing: ["メラベク"]
 rating: R-18
 ---

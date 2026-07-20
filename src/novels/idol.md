@@ -3,9 +3,9 @@ layout: novel.njk
 title: "IDOL-疑似家族"
 date: 2022-04-03
 type: "短編"
-fandom: ["HQ!!"]
+fandom: ["HQ!!", "お気に入り"]
 pairing: ["北侑"]
-rating: 全年齢
+rating: R-18
 ---
 
 　俺、後輩やしな。

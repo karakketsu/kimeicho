@@ -3,7 +3,7 @@ layout: novel.njk
 title: "飯ごと"
 date: 2024-09-28
 type: "短編"
-fandom: ["怪8"]
+fandom: ["怪8", "お気に入り"]
 pairing: ["CPなし"]
 rating: 全年齢
 ---

@@ -3,7 +3,7 @@ layout: novel.njk
 title: "みす・みす・みす"
 date: 2025-04-17
 type: "短編"
-fandom: ["VRAINS"]
+fandom: ["VRAINS", "お気に入り"]
 pairing: ["Ai遊Ai"]
 rating: 全年齢
 caption: "メカバレ"

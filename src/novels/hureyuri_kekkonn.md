@@ -3,7 +3,7 @@ layout: novel.njk
 title: "フレユリと結婚"
 date: 2023-12-27
 type: "短編"
-fandom: ["TOV"]
+fandom: ["TOV", "お気に入り"]
 pairing: ["フレユリ"]
 rating: 全年齢
 ---

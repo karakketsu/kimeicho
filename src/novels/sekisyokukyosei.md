@@ -3,7 +3,7 @@ layout: novel.njk
 title: "赤色巨星"
 date: 2023-12-10
 type: "短編"
-fandom: ["BLUE LOCK"]
+fandom: ["BLUE LOCK", "お気に入り"]
 pairing: ["冴士"]
 rating: 全年齢
 ---

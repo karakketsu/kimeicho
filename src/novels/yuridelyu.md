@@ -3,7 +3,7 @@ layout: novel.njk
 title: "ユリデュ"
 date: 2023-12-27
 type: "短編"
-fandom: ["TOV"]
+fandom: ["TOV", "お気に入り"]
 pairing: ["ユリデュ"]
 rating: 全年齢
 ---
